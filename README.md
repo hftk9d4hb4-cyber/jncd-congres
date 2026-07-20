@@ -59,3 +59,5 @@ La mise en production nécessitera notamment :
 ## Photographies temporaires de Nice
 
 Les photographies intégrées dans `public/images/nice/` servent uniquement à valider la composition visuelle du prototype : accueil, programme, intervenants, inscription, informations pratiques et pied de page. Elles devront être remplacées avant la publication publique par des fichiers haute définition dont les droits d’utilisation sont établis.
+
+Projet connecté à Vercel.
