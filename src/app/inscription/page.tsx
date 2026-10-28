@@ -10,7 +10,7 @@ export default function RegistrationPage() {
     <>
       <PageHero
         eyebrow="Mode test"
-        title="Inscription aux 35es JNCD"
+        title="Inscriptions : ouverture à venir"
         description="Ce formulaire teste le parcours participant. Les tarifs, catégories et conditions seront ajustés avant l’ouverture officielle."
         imageSrc="/images/nice/place-massena.jpg"
         imageAlt="La place Masséna à Nice"
@@ -21,7 +21,7 @@ export default function RegistrationPage() {
           <RegistrationForm />
           <aside className="space-y-5">
             <Card className="p-6">
-              <h2 className="font-semibold text-slate-950">Tarifs provisoires</h2>
+              <h2 className="font-semibold text-slate-950">Montants fictifs de démonstration</h2>
               <div className="mt-5 space-y-4 text-sm">
                 <div className="flex justify-between border-b border-slate-200 pb-3"><span className="text-slate-600">Senior</span><strong>320 €</strong></div>
                 <div className="flex justify-between border-b border-slate-200 pb-3"><span className="text-slate-600">Interne / DJ</span><strong>140 €</strong></div>
