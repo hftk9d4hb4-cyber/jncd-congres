@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import { CongressBrand } from "@/components/congress-brand";
 import { congress } from "@/data/site";
 import { Container } from "@/components/ui";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-slate-200 bg-slate-950 text-slate-300">
+    <footer className="border-t border-slate-200 bg-brand-deep text-slate-300">
       <div className="relative h-28 overflow-hidden border-b border-white/10 sm:h-36">
         <Image
           src="/images/nice/baie-des-anges-fleurs.jpg"
@@ -24,10 +25,10 @@ export function SiteFooter() {
         <Container className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
             <div className="mb-4 flex items-center gap-3">
-              <span className="grid h-10 w-10 place-items-center rounded-xl bg-white text-sm font-bold text-slate-950">JN</span>
+              <CongressBrand inverse />
               <span className="font-semibold text-white">{congress.name}</span>
             </div>
-            <p className="max-w-md text-sm leading-6 text-slate-400">Prototype de la plateforme officielle des {congress.edition}. Les informations publiées dans cette version sont provisoires.</p>
+            <p className="max-w-md text-sm leading-6 text-slate-400">Prévisualisation de la {congress.edition} des JNCD. Les informations publiées dans cette version sont provisoires.</p>
           </div>
           <div>
             <h3 className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-white">Navigation</h3>
@@ -35,7 +36,8 @@ export function SiteFooter() {
               <Link href="/programme">Programme</Link>
               <Link href="/inscription">Inscription</Link>
               <Link href="/infos-pratiques">Informations pratiques</Link>
-              <Link href="/admin">Administration</Link>
+              <Link href="/partenaires">Sponsors et partenaires</Link>
+              <Link href="/admin">Administration · démonstration</Link>
             </div>
           </div>
           <div>

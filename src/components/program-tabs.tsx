@@ -6,8 +6,9 @@ import { Badge, Card } from "@/components/ui";
 import { cn } from "@/lib/cn";
 
 export function ProgramTabs() {
-  const [active, setActive] = useState(programDays[0].id);
+  const [active, setActive] = useState(programDays[0]?.id ?? "");
   const day = programDays.find((d) => d.id === active) ?? programDays[0];
+  if (!day) return <Card className="p-7 text-slate-600">Le programme sera publié après validation.</Card>;
   return <div>
     <div className="mb-8 inline-flex rounded-full border border-slate-200 bg-white p-1 shadow-sm">{programDays.map((item) => <button key={item.id} onClick={() => setActive(item.id)} className={cn("rounded-full px-5 py-3 text-sm font-semibold transition", active === item.id ? "bg-slate-950 text-white" : "text-slate-600 hover:text-slate-950")}>{item.label}</button>)}</div>
     <div className="mb-5"><p className="text-sm font-bold uppercase tracking-[0.18em] text-sky-700">{day.eyebrow}</p></div>

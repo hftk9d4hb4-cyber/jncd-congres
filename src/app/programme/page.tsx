@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { CalendarClock, Download, Mail } from "lucide-react";
+import { CalendarClock, Download } from "lucide-react";
 import { PageHero } from "@/components/page-shell";
-import { Card, Container, LinkButton } from "@/components/ui";
-import { congress } from "@/data/site";
+import { Card, Container } from "@/components/ui";
+import { OrganizationContact } from "@/components/organization-contact";
 
 export const metadata: Metadata = { title: "Programme" };
 
@@ -25,7 +25,7 @@ export default function ProgrammePage() {
             <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600">Cette page accueillera le programme détaillé par journée, avec les sessions, les modérateurs, les intervenants, les ateliers et les temps dédiés aux partenaires.</p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <span className="inline-flex items-center rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-500"><Download size={17} className="mr-2" />Programme PDF à venir</span>
-              <LinkButton href={`mailto:${congress.contactEmail}`} variant="secondary"><Mail size={17} className="mr-2" />Contacter l’organisation</LinkButton>
+              <OrganizationContact />
             </div>
           </Card>
         </Container>

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Building2, Download, Handshake, Mail, Presentation, Store, Users } from "lucide-react";
+import { Building2, Download, Handshake,  Presentation, Store, Users } from "lucide-react";
 import { PageHero } from "@/components/page-shell";
 import { Badge, Card, Container, LinkButton, SectionHeading } from "@/components/ui";
-import { congress } from "@/data/site";
+import { OrganizationContact } from "@/components/organization-contact";
 
 export const metadata: Metadata = {
   title: "Sponsors et partenaires industriels",
@@ -53,7 +53,7 @@ export default function PartnersPage() {
         eyebrow="Sponsors et partenaires"
         title="Soutenir les 35es Journées Niçoises de Chirurgie Digestive"
         description="Les partenaires industriels contribuent à la réalisation du congrès dans un cadre transparent, indépendant et respectueux de l’intégrité scientifique."
-        imageSrc="/images/nice/place-massena-panorama.jpg"
+        imageSrc="/images/nice/place-massena.jpg"
         imageAlt="Vue panoramique de la place Masséna à Nice"
         imagePosition="center"
       />
@@ -109,7 +109,7 @@ export default function PartnersPage() {
               <h2 className="mt-8 max-w-xl text-3xl font-semibold tracking-tight">Construisons un partenariat adapté à votre entreprise</h2>
               <p className="mt-5 max-w-xl text-sm leading-7 text-slate-300">Le comité d’organisation étudiera les demandes de stands, ateliers, symposiums et supports de communication. Toute intervention scientifique restera soumise à une validation éditoriale indépendante.</p>
               <div className="mt-auto flex flex-wrap gap-3 pt-10">
-                <LinkButton href={`mailto:${congress.contactEmail}`} className="bg-white text-slate-950 hover:bg-slate-100"><Mail size={17} className="mr-2" />Contacter l’organisation</LinkButton>
+                <OrganizationContact inverse />
                 <span className="inline-flex items-center rounded-full border border-white/25 px-5 py-3 text-sm font-semibold text-white/80"><Download size={17} className="mr-2" />Dossier partenaire à venir</span>
               </div>
             </div>

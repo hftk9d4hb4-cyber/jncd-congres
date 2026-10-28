@@ -7,11 +7,11 @@ export function Container({ className, ...props }: HTMLAttributes<HTMLDivElement
 }
 
 export function Button({ className, variant = "primary", ...props }: ButtonHTMLAttributes<HTMLButtonElement> & { variant?: "primary" | "secondary" | "ghost" }) {
-  return <button className={cn("inline-flex min-h-11 items-center justify-center rounded-full px-5 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50", variant === "primary" && "bg-slate-950 text-white hover:bg-slate-800", variant === "secondary" && "border border-slate-300 bg-white text-slate-900 hover:border-slate-500", variant === "ghost" && "text-slate-700 hover:bg-slate-100", className)} {...props} />;
+  return <button className={cn("inline-flex min-h-11 items-center justify-center rounded-full px-5 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50", variant === "primary" && "bg-brand text-white hover:bg-brand-deep", variant === "secondary" && "border border-slate-300 bg-white text-slate-900 hover:border-slate-500", variant === "ghost" && "text-slate-700 hover:bg-slate-100", className)} {...props} />;
 }
 
 export function LinkButton({ href, children, variant = "primary", className }: { href: string; children: ReactNode; variant?: "primary" | "secondary" | "ghost"; className?: string }) {
-  return <Link href={href} className={cn("inline-flex min-h-11 items-center justify-center rounded-full px-5 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2", variant === "primary" && "bg-slate-950 text-white hover:bg-slate-800", variant === "secondary" && "border border-slate-300 bg-white text-slate-900 hover:border-slate-500", variant === "ghost" && "text-slate-700 hover:bg-slate-100", className)}>{children}</Link>;
+  return <Link href={href} className={cn("inline-flex min-h-11 items-center justify-center rounded-full px-5 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2", variant === "primary" && "bg-brand text-white hover:bg-brand-deep", variant === "secondary" && "border border-slate-300 bg-white text-slate-900 hover:border-slate-500", variant === "ghost" && "text-slate-700 hover:bg-slate-100", className)}>{children}</Link>;
 }
 
 export function Card({ className, ...props }: HTMLAttributes<HTMLDivElement>) {

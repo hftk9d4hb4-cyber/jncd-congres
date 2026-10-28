@@ -1,6 +1,6 @@
 import Image from "next/image";
 import type { Metadata } from "next";
-import { BedDouble, MapPin, TrainFront, Utensils, Accessibility, Mail } from "lucide-react";
+import { BedDouble, CalendarDays, MapPin, TrainFront, Utensils, Accessibility, Mail } from "lucide-react";
 import { PageHero } from "@/components/page-shell";
 import { Card, Container } from "@/components/ui";
 import { congress } from "@/data/site";
@@ -8,12 +8,13 @@ import { congress } from "@/data/site";
 export const metadata: Metadata = { title: "Informations pratiques" };
 
 const info = [
+  [CalendarDays, "Dates du congrès", congress.dateLabel],
   [MapPin, "Lieu du congrès", congress.venue],
-  [TrainFront, "Venir à Nice", "Accès depuis l’aéroport Nice Côte d’Azur, la gare Nice-Ville et le réseau de tramway. Les itinéraires seront précisés après confirmation du lieu."],
+  [TrainFront, "Venir à Nice", "Accès depuis l’aéroport Nice Côte d’Azur, la gare Nice-Ville et le réseau de tramway. Les itinéraires vers la Faculté de médecine et les modalités d’accès seront précisés prochainement."],
   [BedDouble, "Hébergement", "Chaque participant réserve son hébergement. Le site proposera une liste indicative d’hôtels avec liens directs, sans collecte ni paiement des nuitées."],
-  [Utensils, "Dîner du congrès", "Réservation possible dans le formulaire d’inscription. Le lieu, le tarif et la capacité seront confirmés ultérieurement."],
+  [Utensils, "Dîner du congrès", "Les modalités d’une éventuelle soirée seront communiquées après validation."],
   [Accessibility, "Accessibilité", "Les besoins spécifiques pourront être signalés lors de l’inscription afin d’anticiper l’accueil des participants."],
-  [Mail, "Contact", `Adresse provisoire : ${congress.contactEmail}`],
+  [Mail, "Contact", congress.contactEmail || "Le contact officiel sera communiqué prochainement."],
 ] as const;
 
 export default function PracticalPage() {
@@ -52,7 +53,7 @@ export default function PracticalPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
               <figcaption className="absolute inset-x-0 bottom-0 p-6 text-white sm:p-8">
                 <p className="text-xs font-bold uppercase tracking-[0.18em] text-sky-200">Découvrir Nice</p>
-                <p className="mt-2 text-2xl font-semibold">Le Vieux-Nice à quelques minutes du congrès</p>
+                <p className="mt-2 text-2xl font-semibold">Les ruelles et les couleurs du Vieux-Nice</p>
               </figcaption>
             </figure>
           </div>
