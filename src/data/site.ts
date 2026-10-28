@@ -3,9 +3,9 @@ export const congress = {
   shortName: "JNCD",
   name: "Journées Niçoises de Chirurgie Digestive",
   edition: "35e édition",
-  dateLabel: "Dates à confirmer",
+  dateLabel: "3, 4 et 5 juin 2027",
   city: "Nice",
-  venue: "Lieu à confirmer",
+  venue: "Faculté de médecine de Nice",
   theme: "Le partage d’expertise en chirurgie digestive, à Nice",
   contactEmail: "", // Renseigner uniquement l’adresse officielle validée.
 };

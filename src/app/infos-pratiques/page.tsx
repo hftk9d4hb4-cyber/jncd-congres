@@ -1,6 +1,6 @@
 import Image from "next/image";
 import type { Metadata } from "next";
-import { BedDouble, MapPin, TrainFront, Utensils, Accessibility, Mail } from "lucide-react";
+import { BedDouble, CalendarDays, MapPin, TrainFront, Utensils, Accessibility, Mail } from "lucide-react";
 import { PageHero } from "@/components/page-shell";
 import { Card, Container } from "@/components/ui";
 import { congress } from "@/data/site";
@@ -8,8 +8,9 @@ import { congress } from "@/data/site";
 export const metadata: Metadata = { title: "Informations pratiques" };
 
 const info = [
+  [CalendarDays, "Dates du congrès", congress.dateLabel],
   [MapPin, "Lieu du congrès", congress.venue],
-  [TrainFront, "Venir à Nice", "Accès depuis l’aéroport Nice Côte d’Azur, la gare Nice-Ville et le réseau de tramway. Les itinéraires seront précisés après confirmation du lieu."],
+  [TrainFront, "Venir à Nice", "Accès depuis l’aéroport Nice Côte d’Azur, la gare Nice-Ville et le réseau de tramway. Les itinéraires vers la Faculté de médecine et les modalités d’accès seront précisés prochainement."],
   [BedDouble, "Hébergement", "Chaque participant réserve son hébergement. Le site proposera une liste indicative d’hôtels avec liens directs, sans collecte ni paiement des nuitées."],
   [Utensils, "Dîner du congrès", "Les modalités d’une éventuelle soirée seront communiquées après validation."],
   [Accessibility, "Accessibilité", "Les besoins spécifiques pourront être signalés lors de l’inscription afin d’anticiper l’accueil des participants."],
