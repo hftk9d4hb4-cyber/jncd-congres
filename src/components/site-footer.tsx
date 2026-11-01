@@ -1,3 +1,4 @@
+import { nicePhotos } from "@/data/photos";
 import Image from "next/image";
 import Link from "next/link";
 import { CongressBrand } from "@/components/congress-brand";
@@ -9,8 +10,8 @@ export function SiteFooter() {
     <footer className="border-t border-slate-200 bg-brand-deep text-slate-300">
       <div className="relative h-28 overflow-hidden border-b border-white/10 sm:h-36">
         <Image
-          src="/images/nice/baie-des-anges-fleurs.jpg"
-          alt="La baie de Nice vue depuis les hauteurs"
+          src={nicePhotos.baie.src}
+          alt={nicePhotos.baie.alt}
           fill
           sizes="100vw"
           className="object-cover object-center"
@@ -47,7 +48,7 @@ export function SiteFooter() {
         </Container>
         <Container className="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 JNCD · Version de test privée</p>
-          <Link href="/mentions-legales">Mentions légales et confidentialité</Link>
+          <Link href="/mentions-legales">Mentions légales, confidentialité et crédits photos</Link>
         </Container>
       </div>
     </footer>

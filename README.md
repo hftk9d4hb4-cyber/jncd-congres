@@ -56,8 +56,10 @@ La mise en production nécessitera notamment :
 - les mentions légales et règles d’annulation définitives ;
 - une validation RGPD institutionnelle.
 
-## Photographies temporaires de Nice
+## Photographies de Nice
 
-Les photographies intégrées dans `public/images/nice/` servent uniquement à valider la composition visuelle du prototype : accueil, programme, intervenants, inscription, informations pratiques et pied de page. Elles devront être remplacées avant la publication publique par des fichiers haute définition dont les droits d’utilisation sont établis.
+Les quatre photographies validées par l’organisation sont répertoriées dans `src/data/photos.ts` : place Masséna (Valentin Onu, Pexels), baie des Anges (Mike Norton, CC BY 2.0), port Lympia (Jean-Paul Wettstein, Pexels), cours Saleya (Jean-Pierre Dalbéra, CC BY 2.0).
+
+Les pages utilisent ces sources via l’optimisation et le cache Next.js/Vercel. Seules les quatre URL exactes sont autorisées par `images.remotePatterns`. Leur disponibilité initiale dépend des hébergeurs source. Les crédits, liens de licence et adaptations d’affichage figurent dans les mentions légales. Les anciennes images temporaires ont été retirées.
 
 Projet connecté à Vercel.

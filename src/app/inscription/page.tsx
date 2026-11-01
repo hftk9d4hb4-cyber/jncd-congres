@@ -1,3 +1,4 @@
+import { nicePhotos } from "@/data/photos";
 import type { Metadata } from "next";
 import { PageHero } from "@/components/page-shell";
 import { RegistrationForm } from "@/components/registration-form";
@@ -12,7 +13,7 @@ export default function RegistrationPage() {
         eyebrow="Mode test"
         title="Inscriptions : ouverture à venir"
         description="Ce formulaire teste le parcours participant. Les tarifs, catégories et conditions seront ajustés avant l’ouverture officielle."
-        imageSrc="/images/nice/place-massena.jpg"
+        imageSrc={nicePhotos.massena.src}
         imageAlt="La place Masséna à Nice"
         imagePosition="center"
       />

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//JNCD//35es JNCD 2027//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:35es-jncd-2027@jncd-congres.vercel.app
+DTSTAMP:20261101T000000Z
+SEQUENCE:1
+DTSTART;VALUE=DATE:20270603
+DTEND;VALUE=DATE:20270606
+SUMMARY:35es JNCD — Congrès global
+LOCATION:Faculté de médecine de Nice\, 28 avenue Valombrose\, Nice
+DESCRIPTION:Congrès global du 3 au 5 juin 2027. Horaires à venir. Cet ajo
+ ut à votre agenda ne constitue pas une inscription.
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

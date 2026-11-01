@@ -1,3 +1,4 @@
+import { nicePhotos } from "@/data/photos";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Building2, Download, Handshake,  Presentation, Store, Users } from "lucide-react";
@@ -53,8 +54,8 @@ export default function PartnersPage() {
         eyebrow="Sponsors et partenaires"
         title="Soutenir les 35es Journées Niçoises de Chirurgie Digestive"
         description="Les partenaires industriels contribuent à la réalisation du congrès dans un cadre transparent, indépendant et respectueux de l’intégrité scientifique."
-        imageSrc="/images/nice/place-massena.jpg"
-        imageAlt="Vue panoramique de la place Masséna à Nice"
+        imageSrc={nicePhotos.massena.src}
+        imageAlt={nicePhotos.massena.alt}
         imagePosition="center"
       />
 
@@ -101,7 +102,7 @@ export default function PartnersPage() {
         <Container className="grid gap-8 lg:grid-cols-[1.05fr_.95fr] lg:items-stretch">
           <Card className="relative min-h-96 overflow-hidden border-0 bg-slate-950 p-8 text-white sm:p-10">
             <div className="absolute inset-0 opacity-25">
-              <Image src="/images/nice/port-de-nice.jpg" alt="Port de Nice" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+              <Image src={nicePhotos.port.src} alt="Port de Nice" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-950/90 to-sky-950/70" />
             <div className="relative flex h-full flex-col">

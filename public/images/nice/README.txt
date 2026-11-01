@@ -1,3 +1,4 @@
-Photographies temporaires du prototype JNCD.
-
-Elles ont été intégrées pour valider la composition du site et devront être remplacées avant la publication publique par des versions haute définition dont les droits d'utilisation sont documentés.
+Les anciennes photographies temporaires ont été retirées.
+La sélection validée, les sources et les licences se trouvent dans src/data/photos.ts.
+Les photographies sont chargées via l’optimisation et le cache Next.js/Vercel.
+Les crédits publics figurent sur /mentions-legales#credits-photos.

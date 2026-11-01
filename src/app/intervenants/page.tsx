@@ -1,3 +1,4 @@
+import { nicePhotos } from "@/data/photos";
 import type { Metadata } from "next";
 import { UserRoundSearch } from "lucide-react";
 import { PageHero } from "@/components/page-shell";
@@ -13,8 +14,8 @@ export default function SpeakersPage() {
         eyebrow="Comité scientifique"
         title="Les intervenants seront annoncés prochainement"
         description="Les orateurs, modérateurs et experts invités sont en cours de sélection. Leurs profils seront publiés après confirmation."
-        imageSrc="/images/nice/port-de-nice.jpg"
-        imageAlt="Vue aérienne du port de Nice"
+        imageSrc={nicePhotos.port.src}
+        imageAlt={nicePhotos.port.alt}
         imagePosition="center"
       />
       <section className="py-16 sm:py-24">
