@@ -1,3 +1,4 @@
+import { nicePhotos } from "@/data/photos";
 import Image from "next/image";
 import { AgendaButton } from "@/components/agenda-button";
 import type { Metadata } from "next";
@@ -33,7 +34,7 @@ export default function PracticalPage() {
           <div className="mb-12 grid gap-5 lg:grid-cols-[1.22fr_.78fr]">
             <figure className="group relative min-h-[300px] overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-100 shadow-sm sm:min-h-[390px]">
               <Image
-                src="/images/nice/tramway-place-massena.jpg"
+                src={nicePhotos.massena.src}
                 alt="Le tramway sur la place Masséna à Nice"
                 fill
                 sizes="(max-width: 1024px) 100vw, 58vw"
@@ -47,8 +48,8 @@ export default function PracticalPage() {
             </figure>
             <figure className="group relative min-h-[300px] overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-100 shadow-sm sm:min-h-[390px]">
               <Image
-                src="/images/nice/vieux-nice.jpg"
-                alt="Une rue colorée du Vieux-Nice"
+                src={nicePhotos.saleya.src}
+                alt={nicePhotos.saleya.alt}
                 fill
                 sizes="(max-width: 1024px) 100vw, 38vw"
                 className="object-cover transition duration-500 group-hover:scale-[1.02]"
@@ -56,7 +57,7 @@ export default function PracticalPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
               <figcaption className="absolute inset-x-0 bottom-0 p-6 text-white sm:p-8">
                 <p className="text-xs font-bold uppercase tracking-[0.18em] text-sky-200">Découvrir Nice</p>
-                <p className="mt-2 text-2xl font-semibold">Les ruelles et les couleurs du Vieux-Nice</p>
+                <p className="mt-2 text-2xl font-semibold">Le marché du cours Saleya, au cœur du Vieux-Nice</p>
               </figcaption>
             </figure>
           </div>

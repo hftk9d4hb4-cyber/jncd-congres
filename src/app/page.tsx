@@ -1,3 +1,4 @@
+import { nicePhotos } from "@/data/photos";
 import Image from "next/image";
 import { AgendaButton } from "@/components/agenda-button";
 import { ArrowRight, CalendarDays, MapPin, Stethoscope, Users, Handshake } from "lucide-react";
@@ -24,7 +25,7 @@ export default function HomePage() {
           <div className="mt-5"><AgendaButton /></div>
         </div>
         <figure className="relative min-h-[380px] overflow-hidden rounded-3xl bg-brand-deep sm:min-h-[500px]">
-          <Image src="/images/nice/baie-des-anges-vue-generale.jpg" alt="Vue panoramique de Nice et de la baie des Anges" fill preload sizes="(max-width: 1024px) 100vw, 44vw" className="object-cover" />
+          <Image src={nicePhotos.baie.src} alt="Vue panoramique de Nice et de la baie des Anges" fill preload sizes="(max-width: 1024px) 100vw, 44vw" className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-deep/95 via-brand-deep/10 to-transparent" />
           <figcaption className="absolute inset-x-0 bottom-0 p-7 sm:p-9"><p className="text-xs font-bold uppercase tracking-[0.22em] text-white/80">Ancrées à Nice, ouvertes au partage</p><p className="mt-3 text-2xl font-semibold leading-snug text-white">{congress.theme}</p><span className="mt-5 block h-1 w-12 rounded-full bg-brand-cyan" /></figcaption>
         </figure>

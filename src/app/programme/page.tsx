@@ -1,3 +1,4 @@
+import { nicePhotos } from "@/data/photos";
 import type { Metadata } from "next";
 import { CalendarClock, Download } from "lucide-react";
 import { PageHero } from "@/components/page-shell";
@@ -13,8 +14,8 @@ export default function ProgrammePage() {
         eyebrow="Programme scientifique"
         title="Le programme sera publié prochainement"
         description="Les thématiques, horaires, formats pédagogiques et sessions sont en cours de définition par le comité scientifique."
-        imageSrc="/images/nice/promenade-coucher-de-soleil.jpg"
-        imageAlt="La Promenade des Anglais et la baie de Nice au coucher du soleil"
+        imageSrc={nicePhotos.baie.src}
+        imageAlt={nicePhotos.baie.alt}
         imagePosition="center"
       />
       <section className="bg-slate-50 py-16 sm:py-24">
