@@ -26,7 +26,7 @@ export default function PracticalPage() {
         eyebrow="Préparer sa venue"
         title="Informations pratiques"
         description="Une page unique pour le lieu, les transports, l’hébergement autonome, le dîner et les contacts utiles."
-      ><div className="mt-7"><AgendaButton /><p className="mt-3 text-sm text-slate-500">Événement sur trois journées entières. Les horaires seront précisés avec le programme.</p></div></PageHero>
+      ><div className="mt-7"><AgendaButton /><p className="mt-3 text-sm text-slate-500">Choisissez la période à ajouter à votre agenda. Les événements couvrent des journées entières ; les horaires seront précisés avec le programme.</p></div></PageHero>
       <section className="py-16 sm:py-24">
         <Container>
           <Card className="mb-10 p-6 sm:p-8"><h2 className="text-2xl font-semibold text-brand-deep">Rejoindre la Faculté de médecine</h2><p className="mt-3 leading-7 text-slate-600">{congress.address} · Campus Pasteur</p><div className="mt-5 flex flex-wrap gap-3"><LinkButton href={congress.mapUrl}>Ouvrir le plan</LinkButton><LinkButton href={congress.accessUrl} variant="secondary">Accès officiel de la Faculté</LinkButton><LinkButton href="https://www.lignesdazur.com/" variant="secondary">Préparer mon trajet</LinkButton></div><p className="mt-4 text-xs leading-6 text-slate-500">Source : page d’accès de la Faculté de médecine, consultée le 1er novembre 2026. L’entrée du congrès et l’accueil accessible seront confirmés par l’organisation.</p></Card>

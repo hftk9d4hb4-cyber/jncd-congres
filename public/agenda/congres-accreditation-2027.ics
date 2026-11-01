@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//JNCD//35es JNCD 2027//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:35es-jncd-2027-accreditation@jncd-congres.vercel.app
+DTSTAMP:20261101T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270606
+SUMMARY:35es JNCD — Congrès + accréditation
+LOCATION:Faculté de médecine de Nice\, 28 avenue Valombrose\, Nice
+DESCRIPTION:Congrès + accréditation les vendredi 4 et samedi 5 juin 2027.
+  Horaires à venir. Cet ajout à votre agenda ne constitue pas une inscrip
+ tion.
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
