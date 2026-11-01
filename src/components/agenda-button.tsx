@@ -8,7 +8,11 @@ const calendars = [
 ];
 
 export function AgendaButton({ className }: { className?: string }) {
-  return <div role="group" aria-label="Ajouter à mon agenda : choisir une période" className={cn("flex flex-wrap gap-3", className)}>
+  return <div className={cn("space-y-3", className)}>
+    <p className="text-sm font-semibold text-brand-deep">Ajouter à mon calendrier</p>
+    <p className="max-w-2xl text-sm leading-6 text-slate-600">Invitations pour votre calendrier personnel : choisissez la période à enregistrer. Elles ne constituent pas une inscription au congrès.</p>
+    <div role="group" aria-label="Invitations calendrier : choisir une période" className="flex flex-wrap gap-3">
     {calendars.map(({ label, dates, file }) => <a key={file} href={`/agenda/${file}`} download className="inline-flex min-h-14 max-w-full items-center gap-3 rounded-2xl border border-brand/25 bg-white px-4 py-3 text-brand hover:bg-brand-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4"><CalendarPlus size={20} aria-hidden="true" className="shrink-0" /><span><span className="block text-sm font-semibold">{label}</span><span className="mt-1 block text-xs">{dates}</span><span className="sr-only"> — télécharger le fichier iCalendar</span></span></a>)}
+    </div>
   </div>;
 }
